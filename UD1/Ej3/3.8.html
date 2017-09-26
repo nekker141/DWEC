@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+
+
+    function rebaja(){
+
+      var n = prompt("Precio del producto: ");
+      if(n <= 0){
+        alert("Error");
+      }else{
+      var n2 = prompt("Descuento en (%):");
+      var x = n*n2/100;
+      alert("Precio final = "+(n-x)+"€");
+    }
+    }
+
+    rebaja();
+
+
+    </script>
+  </body>
+</html>
