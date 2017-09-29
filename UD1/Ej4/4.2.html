@@ -7,8 +7,9 @@
   <body>
     <script type="text/javascript">
 
+    var n = prompt("Dime tu edad: ");
 
-      function funcion(n){
+      var MayorEdad = function(n){
         n || (n = 18);
 
         if(n >= 18){
@@ -16,12 +17,9 @@
         }else{
           alert("No");
         }
-
-
-
       }
 
-      funcion(12);
+      MayorEdad(n);
 
     </script>
   </body>
