@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * { background-color:#ABE3EA; }
+      #titulo { font-family: Verdana; }
+      .titulo { font-family: Georgia; }
+      h2 , p { color:green; }
+      div + p { font-family: cursive; }
+      ul ~ div { color:blue; }
+      p[id] {font-weight: bold; }
+      p[title~=title] { font-size: 25px; }
+      p[lang|=es] {font-family: fantasy; }
+      a[href^="http"] { color: red; }
+      a:hover { color:pink; }
+      a[href$=".com"] { font-size: 10px }
+      a[href*="marca"]  {background-color: blue; }
+      p::first-letter { color: yellow; }
+      p:hover { color: yellow; }
+      :not(p) { font-weight: lighter; }
+      input:optional { color:red; }
+      input:required { color:blue; }
+
+    </style>
+  </head>
+  <body>
+    <div class="titulos">
+      <h1 id="titulo">Titulo</h1>
+      <h2 class="titulo">Titulo2</h2>
+    </div>
+    <div class="cuerpo">
+      <p class="parrafo" id="uno">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua.</p>
+      <p class="parrafo" id="dos" title="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua.</p>
+      <p class="parrafo" id="tres" lang=es>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="link">
+      <a href="http://www.marca.com">Marca</a><br>
+    </div>
+
+    <div class="formulario">
+        <form action="/my-handling-form-page" method="post"><br>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" /><br>
+          <label for="mail">E-mail:</label><br>
+          <input type="email" id="mail" required/><br>
+          <label for="msg">Message:</label><br>
+          <textarea id="msg"></textarea>
+        </form>
+    </div>
+
+
+
+
+  </body>
+</html>
