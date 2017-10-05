@@ -8,7 +8,8 @@
     <script type="text/javascript">
       var ar1 = [1,2,3,"hola",true,false,"a",34.5,"b",true];
       var ar2 = [];
-      var j;
+      var j = 0;
+
         for(var i = 0; i < ar1.length; i++){
           document.write("<p>"+ar1[i]+"</p>");
           ar1[i] = Number(ar1[i]);
@@ -16,7 +17,7 @@
           if(isNaN(ar1[i]) == false){
             ar2[j] = ar1[i];
             document.write("<p>"+ar2[j]+"</p>");
-            
+            j++;
           }
         }
 
