@@ -10,13 +10,13 @@
       var ar2 = [];
       var j;
         for(var i = 0; i < ar1.length; i++){
-          console.log(ar1[i]);
           document.write("<p>"+ar1[i]+"</p>");
           ar1[i] = Number(ar1[i]);
 
           if(isNaN(ar1[i]) == false){
             ar2[j] = ar1[i];
-            j++;
+            document.write("<p>"+ar2[j]+"</p>");
+            
           }
         }
 

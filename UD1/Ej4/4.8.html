@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <script type="text/javascript">
+
+        function concatena(a,b){
+
+          if (typeof(a) == "string" && typeof(b) == "string"){
+              var n = a+" "+b;
+              return n;
+          }
+
+        }
+
+        function saludador(concatena,nombre){
+          var salida = concatena("Buenos dias",nombre)
+          alert(salida);
+        }
+
+      saludador(concatena,"Sergio");
+
+      </script>
+  </body>
+</html>
