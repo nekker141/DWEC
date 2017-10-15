@@ -1,3 +1,79 @@
-* {
-  color: blue; font-family: verdana; line-height: 1.4em;
+body{
+  color:yellow; font-family: verdana; line-height: 1.4em;
+  background-image: url(http://www.webdesignhot.com/wp-content/uploads/2014/07/Blue-Abstract-Design-Art-Background-Vector-Illustration.jpg);
+
+
+}
+
+h1{
+  color:white; text-align: center; border: 1px solid white; border-radius: 14px; padding:10px; width: 80px; word-wrap: break-word;
+  background-image: url(https://1.bp.blogspot.com/_sD9yQTE5QZQ/SGvRFJbT6QI/AAAAAAAADg4/5Ot2-aTA4_w/s400/blue1961.jpg);
+  background-repeat: repeat-x;
+}
+
+h1::first-letter{
+  text-transform: uppercase;
+}
+
+P{
+  text-indent: 1cm;
+}
+
+a{
+  text-decoration: none;
+  margin: 1em 0; float: left; clear: left;
+
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.amazon {
+ padding: 0 0 0 30px;
+ background: url(https://cdn.worldvectorlogo.com/logos/amazon-icon.svg) no-repeat left center;
+ background-size: 30px 20px;
+}
+
+table {
+  text-align: center;
+  caption-side: bottom;
+  background-color: white;
+  border: 3px solid black;
+  color:black;
+  width: 20em;
+  height: 15em;
+  border-collapse: collapse;
+}
+
+.leyenda{
+  font-size: 10px; text-align: left; color:white;
+}
+
+
+tr:nth-child(even) {
+  background-color: #BDBDBD;
+}
+
+
+
+.css, .html {
+  text-align: right;
+}
+
+.css{
+  background: url(https://cdn.worldvectorlogo.com/logos/css3.svg) no-repeat left center;
+  background-size: 50px 50px;
+  padding: 0 0 0 50px;
+  background-position: left;
+
+}
+
+.html{
+  background: url(https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/012011/html5_logo-with-wordmark-01.png?itok=mjU-i4b9) no-repeat left center;
+  background-size: 50px 50px;
+  padding: 0 0 0 50px;
+  background-position: left;
+  background-size: 50px 50px;
+
 }
