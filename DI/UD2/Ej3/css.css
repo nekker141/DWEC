@@ -77,3 +77,7 @@ tr:nth-child(even) {
   background-size: 50px 50px;
 
 }
+
+tr ,td{
+  border: 3px solid black;
+}
