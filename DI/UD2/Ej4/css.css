@@ -1,0 +1,27 @@
+img {
+  float:left;
+  padding: 15px;
+  width: 15%;
+  height: 15%;
+}
+
+.izquierda{
+  float:left;
+  padding-top: 8px;
+  padding-left: 5px;
+}
+
+.derecha{
+  float:right;
+  padding-top: 8px;
+  padding-right: 5px;
+}
+
+#footer{
+ padding-bottom: 15px;
+ background-color: lightgray;
+}
+
+.clear{
+  clear: both;
+}
