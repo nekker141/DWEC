@@ -1,0 +1,9 @@
+input, textarea {
+   -webkit-border-radius: 5px;
+}
+
+input:focus {
+  background-color: gray;
+  border-color: violet;
+  outline: none;
+}

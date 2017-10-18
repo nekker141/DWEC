@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="css2.css">
   </head>
   <body>
     <form class="formulario" action="index.html" method="post">
@@ -12,22 +13,80 @@
             <legend>Información Personal</legend>
               <div>
                 <label for="nombre">Nombre*:</label>
-                <input type="text" name="nombre" id="nombre" required="required"><br>
+                <input type="text" name="nombre" id="nombre" required="required" autofocus><br>
               </div>
               <div>
                 <label for="apellidos">Apellidos*:</label>
                 <input type="text" name="apellidos" id="apellidos" required="required"><br>
               </div>
+              <div>
                 <label for="email">Email*:</label>
                 <input type="text" name="email" id="email" required><br>
-
+              </div>
+              <div>
                 Sexo:
                 <label for="hombre">Hombre</label>
-                <input type="button" name="hombre" id="hombre">
+                <input type="radio" name="hombre" id="hombre">
                 <label for="hombre">Mujer</label>
-                <input type="button" name="mujer" id="mujer"><br>
+                <input type="radio" name="mujer" id="mujer"><br>
+              </div>
+              <div>
+                <label for="nac">Fecha nacimiento*:</label>
+                <input type="date" name="nac" id="nac" required="required"><br>
+              </div>
+              <div>
+                <label for="provincias">Provincia:</label>
+                <input list="provincias" placeholder="Escoge provincia">
+                <datalist id="provincias">
+                  <option value="Castellón">
+                  <option value="Valencia">
+                  <option value="Alicante">
+                </datalist>
+              </div>
+              <div>
+                <label for="poblacion">Población:</label>
+                <input type="text" name="poblacion" id="poblacion"><br>
+              </div>
+              <div>
+                <label for="telefono">Telefono:</label>
+                <input type="text" name="telefono" id="telefono"><br>
+              </div>
+              <div>
+                Motivo inscripción:<br>
+                <textarea name="motivo"  cols="100"></textarea><br>
+              </div>
+              <div>
+                Escoge el color de tu avatar:
+                <input type="color" name="color" id="color" required><br>
+              </div>
+          <fieldset>
+            <legend>Creación de usuario</legend>
+            <div>
+              <label for="usuario">Nombre de usuario*:</label>
+              <input type="text" name="usuario" id="usuario" required="required"><br>
+            </div>
+            <div>
+              <label for="contraseña">Contraseña*:</label>
+              <input type="password" name="contraseña" id="contraseña" required="required"  maxlength="8"><br>
+            </div>
+            <div>
+              <label for="repite">Repite contraseña*:</label>
+              <input type="password" name="repite" id="repite" required="required" maxlength="8"><br>
+            </div>
+          </fieldset>
+        </fieldset>
 
-            </fieldset>
+        <div>
+          <input type="checkbox" name="cb1" id="cb1">
+          <label for="cb1">Deseo recibir copias de los mensajes del foro en mi correo electronico.</label>
+        </div>
+        <div>
+          <input type="checkbox" name="cb2" id="cb2">
+          <label for="cb2">Deseo recibir notificaciones de proximos eventos en mi correo electronico.</label>
+        </div>
+        <div>
+          <input type="submit" value="Confirmar registro">
+        </div>
       </fieldset>
     </form>
   </body>

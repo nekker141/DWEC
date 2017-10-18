@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+
+
+
+
+var coche = {marca: "seat",ruedas: "4",plazas: "5",color: "black"};
+
+var pintar = function(pintura){
+  coche.color = pintura;
+}
+
+coche.pintar = pintar("white");
+console.log(coche.color);
+
+function coche(marca,ruedas,plazas,color){
+  this.marca = marca;
+  this.ruedas = ruedas;
+  this.plazas = plazas;
+  this.color = color;
+}
+
+coche1 = new coche();
+
+
+    </script>
+
+  </body>
+</html>
