@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      function Persona(nombre,apellidos){
+          nombre || (nombre = "Antonio");
+          this.nombre = nombre;
+          this.apellidos = apellidos;
+
+          this.saludar = function(){
+            console.log("Hola me llamo "+nombre+" "+apellidos);
+          }
+        }
+
+      Sergio = new Persona("Sergio","Guillén Coso");
+
+      Persona1 = new Persona();
+      Persona2 = new Persona();
+
+      Sergio.saludar();
+      Persona1.saludar();
+      Persona2.saludar();
+
+      console.log(Persona1 instanceof Persona);
+      console.log(Persona2 instanceof Persona);
+
+      document.write(Object.keys(Persona1));
+
+
+
+
+
+    </script>
+  </body>
+</html>

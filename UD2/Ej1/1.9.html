@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    function Persona(nombre,apellidos){
+        nombre || (nombre = "Antonio");
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+
+        Persona.prototype.edad = Math.floor(Math.random()*99+1);
+
+        Persona.prototype.CumplirAnyo = function(){
+          return this.edad + 1;
+        }
+      }
+
+    function Estudiante(nombre,apellidos,estudios,notamedia){
+
+      Persona.call(this,nombre,apellidos);
+
+      this.estudios = estudios;
+      this.notamedia = notamedia.toFixed(2);
+
+      Estudiante.prototype.recuperar = function(){
+        this.notamedia = 5;
+      }
+    }
+
+
+    Alumno1 = new Estudiante("Sergio","Guillén Coso","DAW",7.9);
+    Alumno2 = new Estudiante("Alu","Pepito Garcia","ASIR",0.5);
+    Alumno3 = new Estudiante("Alu","Perez Ruiz","DAM",10);
+
+    var Lista = new Array(Alumno1,Alumno2,Alumno3);
+
+    for (var i in Lista) {
+      var x = Lista[i].apellidos.split(" ");
+      document.write("Nombre: "+Lista[i].nombre+"; Primer Apellido: "+x[0]+"; Segundo Apellido: "+x[1]+"<br>");
+    }
+
+
+
+
+
+
+
+  </script>
+  </body>
+</html>

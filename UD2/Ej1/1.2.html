@@ -9,25 +9,39 @@
 
 
 
+//A
 
+var Coche = new Object();
+Coche.marca = "seat";
+Coche.ruedas = 4;
+Coche.plazas = 5;
+Coche.color = "gris";
 
-var coche = {marca: "seat",ruedas: "4",plazas: "5",color: "black"};
+//B
 
-var pintar = function(pintura){
-  coche.color = pintura;
+var pintar = function(){
+  Coche.color = "white";
 }
 
-coche.pintar = pintar("white");
-console.log(coche.color);
+Coche.pintar = pintar();
+console.log(Coche.color);
 
-function coche(marca,ruedas,plazas,color){
-  this.marca = marca;
-  this.ruedas = ruedas;
-  this.plazas = plazas;
-  this.color = color;
-}
+//C
 
-coche1 = new coche();
+var Coche2 = new Object();
+Coche2.marca = "ferrari";
+Coche2.ruedas = 4;
+Coche2.plazas = 2;
+Coche2.color = "rojo";
+
+//D
+
+delete Coche.plazas;
+
+
+//E
+console.log(Object.keys(Coche));
+console.log(Object.keys(Coche2));
 
 
     </script>
