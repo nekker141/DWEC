@@ -7,3 +7,8 @@ input:focus {
   border-color: violet;
   outline: none;
 }
+
+textarea{
+  height: 40px;
+  overflow: scroll;
+}
