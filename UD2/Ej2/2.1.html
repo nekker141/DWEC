@@ -15,20 +15,27 @@
 
 //B
       var mes = fecha.getMonth();
-      console.log(mes);
+      console.log(mes+1);
 
 //C
       var año = fecha.getFullYear();
       console.log(año);
 //D
       var dia2 = fecha.getDay();
-      var dias = new Array('domingo','lunes','martes','miercoles','juev es','viernes','sabado');
+      var dias = new Array('domingo','lunes','martes','miercoles','jueves','viernes','sabado');
       console.log(dias[dia2]);
 
 //E
-    console.log(dia+"/"+mes+"/"+año);
+    console.log(dia+"/"+(mes+1)+"/"+año);
 
+//F
+    var hora = fecha.getHours();
+    console.log(hora);
 
+//G
+    var minutos = fecha.getMinutes();
+    var segundos = fecha.getSeconds();
+    console.log(dia+"/"+(mes+1)+"/"+año+" "+hora+":"+minutos+":"+segundos);
 
     </script>
   </body>
