@@ -5,6 +5,16 @@
     <title></title>
   </head>
   <body>
+    <script type="text/javascript">
 
+
+
+      var a = setInterval(function(){
+        var fecha = new Date();
+        console.log(fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds()); }, 5000);
+
+    </script>
+      <button type="button" name="Temporizador" OnClick="a">Iniciar</button>
+      <button type="button" name="Temporizador" OnClick="clearInterval(a);">Parar</button>
   </body>
 </html>
