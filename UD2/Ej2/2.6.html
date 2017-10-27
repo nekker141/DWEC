@@ -9,16 +9,15 @@
 
       var array = [1,true,"hola",34];
 
-//A
+
       console.log(array.map(function(n){
         return Number(n);
       }));
 
-//B
 
-    console.log(array.map(function(n){return Number(n);}).filter(function(n) {return !isNaN(n);}));
+    console.log(array.toString(array.map(function(n){return Number(n);}).filter(function(n) {return !isNaN(n);})));
 
-//C
+
 
 
 
