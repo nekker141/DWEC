@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function Producto(codigo,nombre){
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.precio = Math.floor(Math.random() * 3 +1).toFixed(2);
+
+        var ingredientes = ["cebolla","tomate","huevo","pollo"];
+        this.ingredientes = ingredientes.sort();
+
+        this.imprimeDatos = function(){
+          document.write("Código: "+this.codigo+"<br>Nombre: "+this.nombre+"<br> Precio: "+this.precio+"<br>");
+        }
+
+        this.borraIngredientes = function(){
+          ingredientes.pop();
+        }
+
+        this.buscaInfo = function(){
+          var n = prompt("Introduce el ingrediente: ");
+          for (var i in ingredientes) {
+            if(n == ingredientes[i]){
+              window.open("https://www.google.es/search?safe=strict&source=hp&ei=B0nzWfnvFIz6UJKXrfAM&q="+ingredientes[i]);
+            }
+          }
+        }
+
+        this.verIngredientes = function(){
+          var pagina = window.open();
+          for (var i in ingredientes) {
+            pagina.document.write("Ingrediente "+i+": "+ingredientes[i]+"<br>");
+          }
+          pagina.document.write("<button type='button' name='cerrar' OnClick='window.close();'>Salir</button>");
+        }
+      }
+
+
+      Producto1 = new Producto(141,"Galletas");
+      Producto2 = new Producto(344,"Pizza");
+      Producto3 = new Producto(12,"Tarta");
+
+      var array = [Producto1,Producto2,Producto3];
+
+      for (var i in array) {
+        array[i].imprimeDatos();
+        document.write("<button type='button' name='ver' OnClick='array[i].verIngredientes();'>Ver Ingredientes</button>");
+        document.write("<button type='button' name='eliminar' OnClick='array[i].borraIngredientes();'>Eliminar Ingrediente</button>");
+        document.write("<button type='button' name='info' OnClick='array[i].buscaInfo();'>Mas Información</button><br><br>");
+      }
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
