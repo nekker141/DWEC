@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+//A
+      var array = [1,2,3,4];
+
+//B
+      var array2 = [-1,0];
+      var array3 = [5,6];
+      var r = array2.concat(array).concat(array3);
+
+//C
+      console.log(r.toString());
+
+//D
+      r.splice(3,4,5);
+
+//E
+      r.splice(3,0,10,25);
+
+//F
+      console.log(r.join(" ==> "));
+
+//G
+      var invert = r;
+      invert.reverse();
+
+//H
+      console.log(r);
+      console.log(invert);
+
+//I
+      console.log(invert.indexOf(25));
+      console.log(invert.indexOf(1000));
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
