@@ -30,18 +30,17 @@
         this.notamedia = 5;
       }
 
-      this.password = password;
-
       Estudiante.prototype.crearPassword = function(){
-        password.charAt(0).toUpperCase(0);
-        return password;
+        return this.password = password;
       }
+
+
     }
 
-    // return string.charAt(0).toUpperCase() + string.slice(1);
+
 
     Alumno1 = new Estudiante("Alu","Uno","DAM",7.9,"contraseña");
-
+    console.log(Alumno1.recuperar);
 
 
   </script>

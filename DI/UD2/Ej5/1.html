@@ -3,44 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="styleFijo.css">
   <style media="screen">
 
   </style>
   </head>
   <body>
     <header>
-      <div class="container">
-      <div class="logo">
-        <img src="imagen.png">
-      </div>
-      <div class="titulo">
-        <h1>Cabecera del sitio web</h1>
-      </div>
-      <div class="menu">
-        <button type="button" name="inicio">Inicio</button>
-        <button type="button" name="cursos">Cursos</button>
-        <button type="button" name="contacto">Contacto</button>
-      </div>
+      <div class="cabecera">
+        <div class="logo">
+          <img src="imagen.png" width="100px" height="100px">
+        </div>
+        <div class="titulo">
+          <h1>Cabecera del sitio web</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a>Inicio</a></li>
+            <li><a>Cursos</a></li>
+            <li><a>Contacto</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-<aside>
-  <ul>
-      <li class="enero">Enero
-        <ul class=submenu1>
-          <li>Submenú 1</li>
-          <li>Submenú 2</li>
-        </ul>
-      </li>
-      <li class="febrero">Febrero
-        <ul class=submenu2>
-          <li>Submenú 1</li>
-          <li>Submenú 2</li>
-        </ul>
-      </li>
-  </ul>
-</aside>
+<div class="cuerpo">
 
 <section>
   <article class="articulo1">
@@ -53,7 +40,8 @@
     <p>publicado <time>10-10-2016</time></p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <figure>
-      <img src="imagen2.jpg" height="20px" width="20px">
+      <img src="imagen2.jpg" height="200px" width="200px">
+      <figcaption>Este es el caption de la imagen</figcaption>
     </figure>
     <footer>
       <p>comentarios(0)</p>
@@ -75,9 +63,29 @@
   </article>
 </section>
 
+<aside>
+  <ul>
+      <li class="enero">Enero
+        <ul class=submenu1>
+          <li>Submenú 1</li>
+          <li>Submenú 2</li>
+        </ul>
+      </li>
+      <li class="febrero">Febrero
+        <ul class=submenu2>
+          <li>Submenú 1</li>
+          <li>Submenú 2</li>
+        </ul>
+      </li>
+  </ul>
+</aside>
+</div>
+
 <footer>
-<hr>
-<p>Derechos reservados &copy; 2016-2020</p>
+  <div class="pie">
+    <hr>
+    <p>Derechos reservados &copy; 2016-2020</p>
+  </div>
 </footer>
 
 
