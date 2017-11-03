@@ -1,7 +1,28 @@
 var p = new Surtido(productos);
 p.dibujarSurtido();
 
-function verPorPreciosMas(p){
+function verPorPrecioMas(p){
   p.ordenPrecioMas();
   p.dibujarSurtido();
+}
+
+function verPorPrecioMenos(p){
+  p.ordenPrecioMenos();
+  p.dibujarSurtido();
+}
+
+function verVegano(){
+  p.dibujarSurtido(p.filtrarVegano());
+}
+
+function recarga(){
+  location.reload();
+}
+
+function navegarCarrito(){
+  window.open("pedidoOK.html");
+}
+
+function condCompraOnline(){
+  window.open("carrito.html");
 }
