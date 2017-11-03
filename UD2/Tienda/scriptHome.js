@@ -20,7 +20,7 @@ function recarga(){
 }
 
 function navegarCarrito(){
-  window.open("pedidoOK.html");
+  window.open("carrito.html");
 }
 
 function condCompraOnline(){
