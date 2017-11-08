@@ -15,8 +15,8 @@ function Usuario(compra){
   }
 
   this.calcularImporte = function(){
+    this.importe = 0;
     for (var i in compra) {
-      this.importe = 0;
       this.importe += compra[i].precio;
   }
 }
@@ -32,7 +32,6 @@ function Usuario(compra){
       str += "<p><b>" + this.compra[i].precio + "€</b></p>";
       str += "</div></div>";
     }
-
     cuerpo.innerHTML = str;
   }
 
