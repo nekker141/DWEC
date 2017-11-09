@@ -19,13 +19,8 @@ sunt in culpa qui officia deserunt mollit anim id est laborum.
 </div>
 <script type="text/javascript">
 
-  function  modificarSize(){
-    var n = document.getElementsByTagName("select")[0].value;
-
-    for (var i=0;i<3;i++) {
-      document.querySelectorAll("p, h1")[i].style.fontSize = n;
-    }
-  }
+  var h1 = document.getElementsByTagName("p")[0];
+  h1.remove(0);
 
 </script>
 </body>
