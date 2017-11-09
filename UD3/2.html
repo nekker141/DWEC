@@ -7,4 +7,17 @@
  <button type="button" name="button"onclick="mostrar()">Enviar</button>
 </form>
   <p id="resultado">Gracias por participar</p>
- </body>
+  <script type="text/javascript">
+    document.getElementsByTagName("h1")[0].innerHTML = "Hola!";
+    document.getElementsByClassName("destacado")[0].innerHTML = "<b>Escribe:</b>"; //o style.fontWeight="bold";
+    document.querySelector("#resultado").style.display = "none";
+    document.getElementByName("sugerencia").setAttribute = "required";
+
+    function mostrar(){
+      document.querySelector("#resultado").style.display = "initial";
+    }
+
+
+
+  </script>
+</body>
