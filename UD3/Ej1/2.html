@@ -11,10 +11,12 @@
     document.getElementsByTagName("h1")[0].innerHTML = "Hola!";
     document.getElementsByClassName("destacado")[0].innerHTML = "<b>Escribe:</b>"; //o style.fontWeight="bold";
     document.querySelector("#resultado").style.display = "none";
-    document.getElementByName("sugerencia").setAttribute = "required";
+    // document.getElementByName("sugerencia").setAttribute = "required";
+    document.getAttribute("required", "required");
 
     function mostrar(){
       document.querySelector("#resultado").style.display = "initial";
+
     }
 
 
