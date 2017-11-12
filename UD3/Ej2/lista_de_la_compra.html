@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 1</title>
+    <script type="text/javascript">
+
+    function anadirElemento(){
+      var n = document.getElementsByTagName("input")[0];
+
+      if(n.value == ""){
+        alert("Introduce un producto!");
+      }else{
+        var p = document.createElement("p");
+        p.innerHTML = n.value;
+        document.body.appendChild(p);
+        p.style.color = selector.value;
+        p.setAttribute("onclick", "borrarElemento()");
+      }
+    }
+
+    function borrarLista(){
+      var b = document.querySelectorAll('p');
+
+      for(var i=0;i<b.length;i++){
+      b[i].parentNode.removeChild(b[i]);
+      }
+    }
+
+    function borrarElemento(){
+      document.body.removeChild(document.querySelector('p:hover'));
+    }
+
+
+
+    </script>
+  </head>
+  <body>
+    <h1>Lista de la compra</h1>
+    <input type="text" name="texto"></input>
+    <select id="selector" name="selector">
+      <option value=0>Escoge una opción</option>
+      <option value="red">Carnicería</option>
+      <option value="navy">Pescadería</option>
+      <option value="cyan">Congelados</option>
+      <option value="gold">Panadería</option>
+      <option value="magenta">Perfumería</option>
+    </select>
+    <button onclick="anadirElemento()">Añadrir elemento</button>
+    <button onclick="borrarLista()">Borrar lista</button>
+    <hr>
+  </body>
+</html>
