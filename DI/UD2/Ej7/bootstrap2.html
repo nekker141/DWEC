@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<title>Responsive Layout Bootstrap</title>
+<style>
+
+.cabecera{
+  height: 60px;
+  border:1px solid black;
+  background: #32FF00;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.uno{
+  height: 75px;
+  border:1px solid black;
+  background: steelblue;
+  text-align: center;
+}
+.dos{
+  height: 75px;
+  border:1px solid black;
+  background: lightgray;
+  text-align: center;
+}
+
+.tres, .tablet{
+  height: 60px;
+  border:1px solid black;
+  margin-bottom: 10px;
+  background: #00D4FF;
+  text-align: center;
+  margin-top: 10px
+}
+
+.cuatro{
+  height: 75px;
+  border:1px solid black;
+  background: orange;
+  text-align: center;
+  margin-top: 10px
+}
+
+.pie{
+  height: 40px;
+  border:1px solid black;
+  background: #32FF00;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="cabecera col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">Header</div>
+  </div>
+      <div class="row">
+        <div class="uno col-xl-3 col-lg-3 col-md-3 offset-md-3 col-sm-3 col-6">1</div>
+        <div class="uno col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">2</div>
+        <div class="saltodelinea w-100 d-none d-md-block"></div>
+        <div class="uno col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">3</div>
+        <div class="uno col-xl-3 col-lg-3 col-md-3 offset-md-6 col-sm-3 col-6">4</div>
+      </div>
+      <div class="row">
+        <div class="tablet col-12 d-none d-sm-block d-md-none">Tablet</div>
+      </div>
+      <div class="row">
+        <div class="dos col-xl-3 col-lg-3 col-md-3 order-md-4 col-sm-3 col-6">a</div>
+        <div class="dos col-xl-3 col-lg-3 col-md-3 order-md-3 col-sm-3 col-6">b</div>
+        <div class="dos col-xl-3 col-lg-3 col-md-3 order-md-2 col-sm-3 col-6">c</div>
+        <div class="dos col-xl-3 col-lg-3 col-md-3 order-md-1 col-sm-3 col-6">d</div>
+      </div>
+    <div class="row">
+      <div class="tres col-md-12 d-none d-md-block">Desktop</div>
+    </div>
+    <div class="row">
+      <div class="tres col-12 d-block d-sm-none">Mobile</div>
+    </div>
+    <div class="row">
+      <div class="cuatro col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 order-md-2">:D</div>
+      <div class="cuatro d-none d-sm-block col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 order-md-1 offset-md-3">:(</div>
+    </div>
+    <div class="row">
+      <div class="pie col-sm-12 d-none d-sm-block">Footer</div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
