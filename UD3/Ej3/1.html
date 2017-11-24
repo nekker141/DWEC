@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <script type="text/javascript">
+
+    function evento(e){
+      e.target.style.color = 'red';
+    }
+
+    onload = function(){
+      h2.onwheel = function(){
+        h2.style.backgroundColor = 'yellow';
+      }
+    }
+
+    function evento2(e){
+      e.target.style.color = 'orange';
+    }
+    ondblclick = evento2;
+
+  </script>
+  <body>
+    <div class="div">
+      <p >Parrafo</p>
+      <h1 onmouseenter="evento(event)">h1</h1>
+      <h2 id="h2">h2</h2>
+      <h3 id="h3" onclick="h3.style.color='blue'">h3</h3>
+    </div>
+
+  </body>
+</html>
