@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+  onload = function() {
+    onkeydown = mostrarSiEspecial;
+    onkeypress = mostrarCaracter;
+  }
+
+  var especial;
+
+  function mostrarSiEspecial(e){
+    especial = e.altKey || e.ctrlKey || e.shiftKey || e.metaKey;
+    if (especial){
+      var mensaje = '';
+      console.log("Tecla especial");
+    }
+  }
+
+  function mostrarCaracter(e) {
+    var mensaje = '';
+    mensaje = "Tecla " + e.key +" que es la numero: "+ e.charCode+"<br>";
+    txt.innerHTML += mensaje;
+  }
+
+
+</script>
+</head>
+<body>
+<h3>Pulsa una tecla</h3>
+<div id="txt"> </div>
+</body>
+</html>
