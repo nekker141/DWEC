@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+
+      function funcion(){
+          var x = lista.value;
+
+        if (lista.value == "uno") {
+            imagen.style.width = "500px";
+          }else if(lista.value == "dos"){
+            imagen.style.width = "400px";
+          }else if(lista.value == "tres"){
+            imagen.style.width = "800px";
+          }else{
+            imagen.style.width = "50px";
+          }
+}
+
+    </script>
+  </head>
+  <body>
+    <img id="imagen" src="https://i.imgur.com/b7KjqKi.gif" width="200px"><br>
+    <h1>Cambiar tamaño de imagen:</h1>
+    <select id="lista" onchange="funcion()">
+      <option value="nada">
+      <option value="uno">500px
+      <option value="dos">400px
+      <option value="tres">800px
+      <option value="cuatro">50px
+    </select>
+  </body>
+</html>
+
+
+
+
+
+</body>
+</html>
