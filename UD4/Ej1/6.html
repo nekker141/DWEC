@@ -12,7 +12,7 @@
 
 		onload = function(){
 			document.body.innerHTML = txt;
-			onkeypress = mayusculas;
+			onkeydown = mayusculas;
 	  }
 
 		var a = true;
@@ -21,7 +21,7 @@
 				if (a && event.shiftKey) {
 					document.body.innerHTML = txt.toUpperCase();
 					a = false;
-				}else{
+				}else if(e.shiftKey){
 					document.body.innerHTML = txt.toLowerCase();
 				}
 		}
