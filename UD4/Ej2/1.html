@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      body {
+        text-align: center;
+      }
+      img {
+        margin-right: 30px;
+      }
+    </style>
+    <script type="text/javascript">
+
+      onload = function() {
+        uno.addEventListener('click',caja1);
+        uno.addEventListener('contextmenu',pista);
+
+        dos.addEventListener('click',caja2);
+        dos.addEventListener('contextmenu',pista2);
+
+        tres.addEventListener('click',caja3);
+        tres.addEventListener('contextmenu',pista3);
+
+      }
+
+
+
+
+    function caja1(){
+      uno.setAttribute("src", "ferrari.jpg");
+      alert("Te ha tocado un ferrari!");
+
+      uno.removeEventListener('click',caja1);
+      uno.removeEventListener('contextmenu',pista);
+      uno.addEventListener('click',premio);
+      dos.removeEventListener('click',caja2);
+      dos.removeEventListener('contextmenu',pista2);
+      dos.addEventListener('click',premio);
+      tres.removeEventListener('click',caja3);
+      tres.removeEventListener('contextmenu',pista3);
+      tres.addEventListener('click',premio);
+    }
+
+    function caja2(){
+      dos.setAttribute("src", "1.png");
+      alert("Te ha tocado 1€!");
+
+      uno.removeEventListener('click',caja1);
+      uno.removeEventListener('contextmenu',pista);
+      dos.removeEventListener('click',caja2);
+      dos.removeEventListener('contextmenu',pista2);
+      tres.removeEventListener('click',caja3);
+      tres.removeEventListener('contextmenu',pista3);
+    }
+
+    function caja3(){
+      tres.setAttribute("src", "monopatin.png");
+      alert("Te ha tocado un Monopatín eléctrico!");
+
+      uno.removeEventListener('click',caja1);
+      uno.removeEventListener('contextmenu',pista);
+      dos.removeEventListener('click',caja2);
+      dos.removeEventListener('contextmenu',pista2);
+      tres.removeEventListener('click',caja3);
+      tres.removeEventListener('contextmenu',pista3);
+    }
+
+    function pista(e){
+      e.preventDefault();
+      alert("Es rojo");
+    }
+
+    function pista2(e){
+      e.preventDefault();
+      alert("Es pequeño");
+    }
+
+    function pista3(e){
+      e.preventDefault();
+      alert("Tiene dos ruedas");
+    }
+
+    function premio(){
+
+    }
+
+
+
+
+
+    </script>
+  </head>
+  <body>
+    <h1>Escoge un regalo</h1>
+    <img id="uno" src="caja.png" width="200px">
+    <img id="dos" src="caja.png" width="200px">
+    <img id="tres" src="caja.png" width="200px">
+  </body>
+</html>
