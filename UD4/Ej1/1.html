@@ -25,13 +25,20 @@
       e.target.style.backgroundColor = 'cyan';
     }
 
+    function borde(e){
+      e.preventDefault();
+      div.style.border = '1px solid black';
+    }
+    oncontextmenu = borde;
+
   </script>
   <body>
-    <div class="div">
+    <div id="div">
       <p >Parrafo</p>
       <h1 onmouseenter="evento(event)">h1</h1>
       <h2 id="h2">h2</h2>
       <h3 id="h3" onclick="h3.style.color='blue'">h3</h3>
+      Haz click derecho
     </div>
 
   </body>
