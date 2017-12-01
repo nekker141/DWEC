@@ -17,8 +17,8 @@
 
 		var a = true;
 
-		function mayusculas(e){
-				if (a && e.shiftKey) {
+		function mayusculas(){
+				if (a && event.shiftKey) {
 					document.body.innerHTML = txt.toUpperCase();
 					a = false;
 				}else{
