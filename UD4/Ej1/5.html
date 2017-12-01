@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <script type="text/javascript">
 
-      document.addEventListener('DOMContentLoaded',function(){
+      onload = function() {
         midiv.addEventListener('mouseover',grande);
         midiv.addEventListener('mouseout',pequeño);
         cerrar.addEventListener('click',close);
-      });
+      }
 
       function grande(){
         midiv.style.width="500px";
