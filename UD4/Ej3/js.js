@@ -120,6 +120,13 @@ if (sec == null || sec == 0){
     ret = false;
 }
 
+if(foro.checked){
+
+}
+if(eventos.checked){
+  formulario.action = "eventos.html";
+}
+
 //metodo de pago
 
 if(efectivo.checked == false && tarjeta.checked == false ){
