@@ -120,12 +120,16 @@ if (sec == null || sec == 0){
     ret = false;
 }
 
-if(foro.checked){
+if(sec == 1 ){
+  formu.action = "discos.html";
+}else if(sec == 2 ){
+  formu.action = "libros.html";
+}else if(sec == 3 ){
+  formu.action = "Tecnología.html";
+}
 
-}
-if(eventos.checked){
-  formulario.action = "eventos.html";
-}
+
+
 
 //metodo de pago
 
