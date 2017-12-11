@@ -112,6 +112,29 @@ if (edad < 18){
   ret = false;
 }
 
+//seccion
+
+var sec = document.getElementsByName("seccion")[0].selectedIndex;
+if (sec == null || sec == 0){
+    errList += "Escoja una seccion <br/>";
+    ret = false;
+}
+
+//metodo de pago
+
+if(efectivo.checked == false && tarjeta.checked == false ){
+  errList += "Pon un metodo de pago <br/>";
+  ret = false;
+}
+
+
+//aceptar condiciones de alta
+if(cond.checked == false){
+  errList += "Acepta las condiciones de alta <br/>";
+  ret = false;
+}
+
+
 //Final
       if (ret == false){
         err.style.color="red";
@@ -119,5 +142,6 @@ if (edad < 18){
 
       err.innerHTML = errList;
       return ret;
+      enviar.disabled = true;
   }
 }
