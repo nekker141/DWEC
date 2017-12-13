@@ -133,7 +133,7 @@ if(sec == 1 ){
 
 
 
->>>>>>> 3e205052b073325809d6debe131092d5718bc5ea
+
 //metodo de pago
 
 if(efectivo.checked == false && tarjeta.checked == false ){
