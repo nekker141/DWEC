@@ -120,6 +120,20 @@ if (sec == null || sec == 0){
     ret = false;
 }
 
+<<<<<<< HEAD
+=======
+if(sec == 1 ){
+  formu.action = "discos.html";
+}else if(sec == 2 ){
+  formu.action = "libros.html";
+}else if(sec == 3 ){
+  formu.action = "Tecnología.html";
+}
+
+
+
+
+>>>>>>> 3e205052b073325809d6debe131092d5718bc5ea
 //metodo de pago
 
 if(efectivo.checked == false && tarjeta.checked == false ){
