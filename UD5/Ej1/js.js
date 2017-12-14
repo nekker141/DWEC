@@ -7,12 +7,14 @@ onload = function(){
   formu.onsubmit = function validacion(){
 
       var err = document.getElementsByClassName('errores')[0];
+      var errList ="";
       var ret = true;
 
 //Nombre
       var nom = document.getElementsByName('nombre')[0].value;
 
-      if (nom == null){
+      if (nom == null || nom.length == 0 || !(/^\S+[\s?\S+]*$/.test(nom))){
+           errList += "El nombre es erróneo <br/>"
            ret = false;
       }
 
@@ -20,27 +22,32 @@ onload = function(){
 
 var ape = document.getElementsByName('apellidos')[0].value;
 
-if (ape == null){
+if (ape == null || ape.length == 0 || !(/^\S+[\s?\S+]*$/.test(ape))){
+     errList += "El apellido es erróneo <br/>"
      ret = false;
 }
 
 //Email
 var email = document.getElementsByName("email")[0].value;
 
-if (email == null){
+if ( !/^\w+@\w+\.\w+$/.test(email) ){
+  errList += "El email es incorrecto <br/>";
   ret = false;
 }
 
 var emailRepe = document.getElementById("emailRepe").value;
 if(email != emailRepe){
+  errList += "El email repetido debe coincidir con el primer email que introdujo <br/>";
   ret = false;
 }
 
 //dni
 
 var dni = document.getElementsByName('dni')[0].value;
+var v = /^\d{8}[a-zA-Z]$/;
 
-if (dni == null){
+if (v.test(dni) == false){
+     errList += "El DNI es erróneo <br/>"
      ret = false;
 }
 
@@ -73,15 +80,41 @@ if (edad < 18){
 //seccion
 
 var sec = document.getElementsByName("seccion")[0].selectedIndex;
-if (sec == null){
+if (sec == null || sec == 0){
+    errList += "Escoja una seccion <br/>";
     ret = false;
 }
+
+
+
+// if(sec == 1 ){
+//   formu.action = "discos.html";
+// }else if(sec == 2 ){
+//   formu.action = "libros.html";
+// }else if(sec == 3 ){
+//   formu.action = "Tecnología.html";
+// }
+
+formulario.action = "alta.html"
+
+
+
+
 
 //metodo de pago
 
 if(efectivo.checked == false && tarjeta.checked == false ){
+  errList += "Pon un metodo de pago <br/>";
   ret = false;
 }
+
+
+//aceptar condiciones de alta
+if(cond.checked == false){
+  errList += "Acepta las condiciones de alta <br/>";
+  ret = false;
+}
+
 
 //Final
       if (ret == false){
