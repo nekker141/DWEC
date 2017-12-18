@@ -120,8 +120,7 @@ if (sec == null || sec == 0){
     ret = false;
 }
 
-<<<<<<< HEAD
-=======
+
 if(sec == 1 ){
   formu.action = "discos.html";
 }else if(sec == 2 ){
