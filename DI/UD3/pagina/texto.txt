@@ -1,0 +1,37 @@
+2-
+
+El logo y los iconos de email y telefono tendran que ser imagenes vectoriales.
+
+La imagen pricipal sera PNG y la foto de conocenos JPG.
+
+3-
+
+logo 
+antes: 158kb
+despues: 229kb
+
+mail 
+antes: 24kb
+despues: 36kb
+
+telefono
+antes: 5kb
+despues: 21kb
+
+5-
+Las imágenes PNG-8 pueden ser guardadas como imágenes PNG-24, pero no puede hacerse a la inversa. Al intentar guardar una imagen PNG-24 como PNG-8 verás una pérdida de color, lo que se verá como una imagen borrosa. Además, si alguna zona es parcialmente transparente, como una sombra paralela o un brillo, esta zona será reemplazada con bandas de color en PNG-8.
+jpg 1.66mb
+png 7.78mb
+
+No se aprecia el cambio
+90-190kb
+70-100kb
+
+PNG-8 Y jpg 90%
+
+
+
+
+
+
+

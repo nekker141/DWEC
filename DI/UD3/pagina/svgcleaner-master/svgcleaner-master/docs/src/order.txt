@@ -1,0 +1,54 @@
+-- Elements
+remove-comments.rst
+remove-declarations.rst
+remove-nonsvg-elements.rst
+remove-unused-defs.rst
+convert-shapes.rst
+remove-title.rst
+remove-desc.rst
+remove-metadata.rst
+remove-dupl-lineargradient.rst
+remove-dupl-radialgradient.rst
+remove-dupl-fegaussianblur.rst
+ungroup-groups.rst
+ungroup-defs.rst
+group-by-style.rst
+merge-gradients.rst
+regroup-gradient-stops.rst
+remove-invalid-stops.rst
+remove-invisible-elements.rst
+resolve-use.rst
+-- Attributes
+remove-version.rst
+remove-nonsvg-attributes.rst
+remove-unreferenced-ids.rst
+trim-ids.rst
+remove-text-attributes.rst
+remove-unused-coordinates.rst
+remove-default-attributes.rst
+remove-xmlns-xlink-attribute.rst
+remove-needless-attributes.rst
+remove-gradient-attributes.rst
+join-style-attributes.rst
+apply-transform-to-gradients.rst
+apply-transform-to-shapes.rst
+remove-unresolved-classes.rst
+-- Paths
+paths-to-relative.rst
+remove-unused-segments.rst
+convert-segments.rst
+apply-transform-to-paths.rst
+trim-paths.rst
+join-arcto-flags.rst
+remove-dupl-cmd-in-paths.rst
+use-implicit-cmds.rst
+-- Output
+trim-colors.rst
+simplify-transforms.rst
+coordinates-precision.rst
+properties-precision.rst
+transforms-precision.rst
+paths-coordinates-precision.rst
+indent.rst
+-- Other
+no-defaults.rst
