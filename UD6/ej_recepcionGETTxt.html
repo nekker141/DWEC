@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo peticion AJAX Get Texto plano</title>
+    <script type="text/javascript">
+      onload = function(){
+        var xhr = new XMLHttpRequest();
+        btn.onclick = function(){
+          var url = "datosServidor.txt";
+          xhr.open("GET",url,true);
+          xhr.onreadystatechange = muestraResultado;
+          xhr.send();
+
+          if(window.XMLHttpRequest){
+            var xhr = new XMLHttpRequest();
+          }else if(ActiveXObject("Microsoft.XMLHTTP")){
+            var XHR = new ActiveXObject("Microsoft.XMLHTTP");
+          }
+        }
+
+        function muestraResultado(){
+            // console.log(xhr.readyState);
+            // console.log(xhr.status);
+
+            if(xhr.readyState == 4 && xhr.status == 200){
+              console.log(xhr.getAllResponseHeaders());
+              resultado.innerHTML = xhr.responseText;
+            }else if(xhr.status != 200 && xhr.readyState == 4){
+              alert(xhr.statusText);
+            }
+        }
+      }
+
+
+    </script>
+  </head>
+  <body>
+    <h1>Ejemplo GET Texto plano</h1>
+    <button id="btn">Llamada Ajax</button>
+    <p id="resultado"></p>
+  </body>
+</html>
