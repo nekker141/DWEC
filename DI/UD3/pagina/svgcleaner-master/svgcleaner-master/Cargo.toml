@@ -1,0 +1,56 @@
+[package]
+name = "svgcleaner"
+version = "0.9.2"
+authors = ["Evgeniy Reizner <razrfalcon@gmail.com>"]
+keywords = ["svg", "cleaner", "optimizer"]
+license = "GPL-2.0"
+description = "svgcleaner could help you to clean up your SVG files from the unnecessary data."
+documentation = "https://github.com/RazrFalcon/svgcleaner/blob/master/docs/svgcleaner.rst"
+repository = "https://github.com/RazrFalcon/svgcleaner"
+readme = "README.rst"
+categories = ["multimedia::images"]
+
+[badges]
+travis-ci = { repository = "RazrFalcon/svgcleaner" }
+
+[lib]
+name = "svgcleaner"
+path = "src/lib.rs"
+doctest = false
+
+[[bin]]
+doc = false
+name = "svgcleaner"
+path = "src/main.rs"
+
+[dependencies]
+log = "0.3"
+fern = "0.4"
+
+[dependencies.svgdom]
+# latest
+# git = "https://github.com/RazrFalcon/libsvgdom.git"
+# branch = "devel"
+# local copy
+# path = "../svgdom"
+# from crates
+version = "0.9"
+
+[dependencies.error-chain]
+version = "0.11"
+default-features = false
+
+[dependencies.clap]
+version = "2"
+default-features = false
+optional = true
+
+[features]
+default = ["cli-parsing"]
+cli-parsing = ["clap"]
+
+# Makes it 5-10% faster, but very slow to compile.
+# Also makes an executable ~30% smaller.
+[profile.release]
+opt-level = 3
+lto = true
