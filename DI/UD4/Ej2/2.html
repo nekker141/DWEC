@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("h1").css('border','2px solid steelblue');
+    $("body").attr('align', 'center');
+    $("img").innerWidth(400).css('display', 'none');
+    $("button").css('display', 'none');
+
+    $("h1").click(function(){
+      $("img").toggle();
+    });
+});
+</script>
+</head>
+<body>
+ <h1>Haz click aquí para desplegar la imagen!</h1>
+ <div class="contenedor">
+ <img src="mundo.jpg">
+ <button id="masAncho">+</button>
+ <button id="menosAncho">-</button>
+ </div>
+</body>
+</html>
