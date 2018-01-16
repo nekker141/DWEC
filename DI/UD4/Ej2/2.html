@@ -9,8 +9,28 @@
     $("img").innerWidth(400).css('display', 'none');
     $("button").css('display', 'none');
 
+    var cont = true
     $("h1").click(function(){
-      $("img").toggle();
+      if (cont) {
+        $("img").slideDown();
+        $("button").slideDown();
+        $("h1").text("Hola mundo!");
+        cont = false;
+      }else{
+        $("img").slideUp();
+        $("h1").text("Vuelve a hacer click!");
+        cont = true;
+      }
+
+      $("#masAncho").click(function(){
+        $("img").width($("img").width()+20);
+        });
+
+        $("#menosAncho").click(function(){
+          $("img").width($("img").width()-20);
+          });
+
+
     });
 });
 </script>
