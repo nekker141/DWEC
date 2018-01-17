@@ -5,27 +5,31 @@
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
-      $("img").css('display', 'none');
+    $(document).ready(function(){
+      $("#dos").css('display', 'none');
 
       var cont = true
       $("#boton").click(function(){
         if (cont) {
-          $("img").attr('src','encendida.png');
+          $("#uno").hide();
+          $("#dos").show();
           $("#boton").text("Apagar");
           cont = false;
         }else{
-          $("img").attr("src","apagada.png");
+          $("#dos").hide();
+          $("#uno").show();
           $("#boton").text("Encender");
           cont = true;
         }
         });
+      });
 
 
     </script>
   </head>
   <body>
-    <img src="apagada.png">
-    <img src="encendida.png">
+    <img src="apagada.png" id="uno">
+    <img src="encendida.png" id="dos">
     <button type="button" id="boton">Encender</button>
   </body>
 </html>
