@@ -22,14 +22,34 @@
       function final(){
         if (xhr.readyState == 4 && xhr.status == 200){
             resultado.innerHTML =  xhr.responseText;
+            console.log();
         }else if (xhr.status != 200) {
           alert("Error! " + xhr.statusText);
         }
+
+        switch(xhr.readyState) {
+          case 2:
+              estados.innerHTML += "<br>Peticion recibida.<br>";
+              break;
+          case 3:
+              estados.innerHTML += "Cargando.<br>";
+              break;
+          case 4:
+              estados.innerHTML += "Completada.<br>";
+              break;
+            }
+
+            cabeceras.innerHTML += "<br>"+xhr.getAllResponseHeaders()+"<br>"
+            codigos.innerHTML += "<br>"+xhr.status
+            codigos.innerHTML += xhr.statusText+"<br>"
       }
     }
     </script>
   </head>
   <body>
     <p id="resultado"></p>
+    <div id="estados">Estados de la petición:</div><br>
+    <div id="cabeceras">Cabeceras HTTP de la respuesta del servidor:</div><br>
+    <div id="codigos">Código de estado:</div>
   </body>
 </html>
