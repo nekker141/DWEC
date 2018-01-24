@@ -49,7 +49,7 @@ p span{
 }
 
 a {
-	color: #598eff; text-decoration: none; border-bottom: 1px dotted #598eff;
+	color: black; text-decoration: none; border-bottom: 1px dotted #598eff;
 }
 
 a:hover {
