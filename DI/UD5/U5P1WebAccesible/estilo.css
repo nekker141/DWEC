@@ -1,6 +1,6 @@
 * {
 	margin: 0px; padding: 0px;
-	font-family: arial, helvetica, sans-serif; color: black; background: #FFFFFF;
+	font-family: arial, helvetica, sans-serif; color: #000000; background: #FFFFFF;
 	line-height: 1.3em;
 }
 
@@ -49,11 +49,11 @@ p span{
 }
 
 a {
-	color: black; text-decoration: none; border-bottom: 1px dotted #598eff;
+	color: #000000; text-decoration: none; border-bottom: 1px dotted #598eff;
 }
 
 a:hover {
-	color: #003366; background: #CCCCCC; border-bottom: 1px solid #003366;
+	color: #000000; background: #CCCCCC; border-bottom: 1px solid #003366;
 }
 
 img{
