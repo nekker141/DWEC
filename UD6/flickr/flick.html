@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Plantilla básica JQuery Local</title>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			fotos.innerHTML = "";
+			var valor = $("#selector").val();
+			var url = "https://api.flickr.com/services/feeds/photos_public.gne?tags=";
+			url += valor + "&format=json&jsoncallback=?";
+			$.getJSON(url,function(data,status,xhr){
+				var arrFotos = data.items;
+				$.each(arrFotos,function(i,item){
+					// console.log("Imagen nº: "+ i + " src= "+ item.media.m);
+					if (i < 10) {
+						fotos.innerHTML += "<img src='"+item.media.m+"' width='100px' height='100px'>";
+
+					}
+
+				});
+			});
+		});
+	});
+
+	onchange = function(){
+		fotos.innerHTML = "";
+		fotos.innerHTML += "<img src='circulo.gif' width='20px' height='20px'>";
+	};
+
+</script>
+</head>
+<body>
+	<h1>Mi Flickr</h1>
+	<div id="imagenes"></div>
+	<button>Dibujar</button>
+	<select id="selector">
+		<option value="puppys">Perros</option>
+		<option value="lmao">Lmao</option>
+		<option value="sergio">Sergio</option>
+		<option value="coches">Coches</option>
+		<option value="futbol">Futbol</option>
+		<option value="valencia">Valencia</option>
+		<option value="bitcoin">Bitcoin</option>
+	</select>
+	<div id="fotos"></div>
+</body>
+</html>
