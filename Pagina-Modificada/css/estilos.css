@@ -1,0 +1,195 @@
+/* Cabecera */
+
+header{
+  background-color: red;
+  height: 90px;
+}
+
+header img{
+  width: 150px;
+  float: left;
+
+  margin-left: -50px;
+}
+
+h1{
+  width: 100%;
+  background-color: red;
+}
+
+.fase{
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+.lupa{
+  background-color: white;
+  border-radius: 10px 0px 0px 10px;
+
+}
+
+.buscador{
+  max-width: 400px;
+  margin-left: 270px;
+  padding-top: 25px;
+  position: absolute;
+}
+
+.buscador input{
+  border-radius: 0px 10px 10px 0px;
+-moz-border-radius: 0px 10px 10px 0px;
+-webkit-border-radius: 0px 10px 10px 0px;
+border: 0px none #000000;
+
+}
+
+.buscador input:focus {
+    box-shadow:none;
+}
+
+.login-register{
+  float: right;
+  padding-top: 10px;
+}
+
+.login-register a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register{
+  padding-left: 15px;
+}
+
+.carrito{
+  padding-left: 15px;
+}
+
+
+/* Menu */
+
+.navbar-nav > li > a:hover{
+  border-bottom: 3px solid #C00;
+}
+
+table tr td{
+  width: 250px;
+}
+
+li {
+	margin: 0px;
+	padding: 0px;
+
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.masamuscular{
+  display: none;
+  height: 280px;
+  padding-left: 500px;
+  background-color: #EAEAE9;
+}
+
+hr{
+  margin: 0px;
+  padding: 0px;
+  border-color: #898787;
+  margin-right: 5em;
+}
+
+.masamuscular table ul{
+  text-decoration: none;
+  list-style: none;
+}
+
+.masamuscular th > a{
+  color: black;
+  font-weight: bold;
+}
+
+.masamuscular th {
+  padding-top: 10px;
+}
+
+.masamuscular table td a{
+  color: gray;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.masamuscular a:hover{
+  text-decoration: none;
+  color: red;
+}
+
+
+
+/* Carrusel */
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Cajas con los productos*/
+.FilaProteinas1{
+  height: 300px;
+  border:1px solid black;
+  background: white;
+  text-align: center;
+  text: solid black;
+  margin-bottom: 10px;
+}
+.FilaProteinas2{
+  height: 300px;
+  border:1px solid black;
+  background: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Las 5 estrellitas productos*/
+#form {
+  width: 250px;
+  margin: 0px auto;
+  height: 50px;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 30px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+/* aqui acaban codigo 5 estrellas*/
