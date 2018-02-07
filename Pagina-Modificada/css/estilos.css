@@ -8,7 +8,6 @@ header{
 header img{
   width: 150px;
   float: left;
-
   margin-left: -50px;
 }
 
@@ -87,46 +86,40 @@ ul {
 	padding: 0px;
 }
 
-.masamuscular{
+.masamuscular, .quemadoresdegrasa, .energia, .productosalimenticios{
   display: none;
   height: 280px;
-  padding-left: 500px;
-  background-color: #EAEAE9;
+  padding-left: 230px;
+  background-color: #E9E9E9;
 }
 
 hr{
-  margin: 0px;
-  padding: 0px;
-  border-color: #898787;
-  margin-right: 5em;
+  margin: 0;
+  padding: 0;
+  border-color: silver;
+  margin-right: 10px;
 }
 
-.masamuscular table ul{
+.masamuscular table ul, .quemadoresdegrasa table ul, .energia table ul, .productosalimenticios table ul{
   text-decoration: none;
   list-style: none;
 }
 
-.masamuscular th > a{
+.masamuscular th > a, .quemadoresdegrasa th > a, .energia th > a, .productosalimenticios th > a{
   color: black;
   font-weight: bold;
 }
 
-.masamuscular th {
-  padding-top: 10px;
-}
-
-.masamuscular table td a{
+.masamuscular table td a, .quemadoresdegrasa table td a, .energia table td a, .productosalimenticios table td a{
   color: gray;
   margin-left: 10px;
   text-align: left;
 }
 
-.masamuscular a:hover{
+.masamuscular a:hover, .quemadoresdegrasa a:hover, .energia a:hover, .productosalimenticios a:hover{
   text-decoration: none;
   color: red;
 }
-
-
 
 /* Carrusel */
 .carousel-item {
