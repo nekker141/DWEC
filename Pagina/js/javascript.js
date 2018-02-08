@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  // Menu
   $(".navbar-nav li:nth-child(1), .masamuscular").mouseenter(function(){
       $(".masamuscular").show();
     }).mouseleave(function(){
@@ -21,8 +23,18 @@ $(document).ready(function(){
     }).mouseleave(function(){
       $(".productosalimenticios").hide();
     });
+  $(".navbar-nav li:nth-child(5), .marcas").mouseenter(function(){
+      $(".marcas").show();
+    }).mouseleave(function(){
+      $(".marcas").hide();
+    });
 
+// Buscador
   $(".lupa").click(function(){
     $(".form-control").focus();
+  });
 });
-});
+
+function login(){
+  var v = window.open("login.html","","height=550 width=400");
+}
