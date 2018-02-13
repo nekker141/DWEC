@@ -11,23 +11,32 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Ejemplo de fuente externa -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> <!--Fuente externa-->
+    <!--Estilo para los Sprites de los titulares-->
+    <link rel="stylesheet" href="estiloSprite.css">
+    <!-- Enlace a font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- JavaScript -->
     <script src="js/javascript.js"></script>
+    <!-- Icono de Fvoritos -->
+    <link rel="iconofavoritos" href="logo1.png">
+
   </head>
 
   <body>
     <!-- Cabecera -->
     <header>
       <div class="container">
-      <img src="logo1.png" alt="logo">
+      <img src="logo1.png" alt="logo" id="logo">
       <div class="buscador input-group">
         <span class="lupa input-group-addon"><i class="fas fa-search fa-lg fase"></i></span>
         <input type="text" class="form-control" placeholder="Buscar...">
       </div>
       <div class="login-register">
-        <span class="login"><a href="">iniciar sesión</a></span>
-        <span class="register"><a href="">registrarse</a></span>
-        <span class="carrito"><a href=""><i class="fas fa-cart-plus"></i></a></span>
+        <span class="login"><a href="" onclick="login()">Iniciar Sesión</a></span>
+        <span class="register"><a href="">Registrarse</a></span>
+        <span class="carrito"><a href=""><i class="fas fa-shopping-cart fa-lg"></i></a></span>
       </div>
       </div>
     </header>
@@ -357,140 +366,108 @@
         <div class="row">
     <div class="FilaProteinas1 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12"><p><img src="proteina.jpeg" width="200px" /><br>Whey hydro isolate 2200gr<br>49,99€</p>
 <!-- Codigo de las 5 estrellas -->
-      <form>
-      <p class="clasificacion">
-        <input id="radio1" type="radio" name="estrellas" value="5"><!--
-        --><label for="radio1">★</label><!--
-      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-      --><label for="radio2">★</label><!--
-      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-      --><label for="radio3">★</label><!--
-      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-      --><label for="radio4">★</label><!--
-      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-      --><label for="radio5">★</label>
-          </p></form>
+<div class="acidjs-rating-stars">
+<form>
+  <input type="radio" name="group-1" id="group-1-0" value="5" /><label for="group-1-0"></label><!--
+  --><input type="radio" name="group-1" id="group-1-1" value="4" /><label for="group-1-1"></label><!--
+  --><input type="radio" name="group-1" id="group-1-2" value="3" /><label for="group-1-2"></label><!--
+  --><input type="radio" name="group-1" id="group-1-3" value="2" /><label for="group-1-3"></label><!--
+  --><input type="radio" name="group-1" id="group-1-4"  value="1" /><label for="group-1-4"></label>
+</form>
+</div>
           <!--Aqui acaba codigo de las 5 estrellas-->
         </div>
     <div class="FilaProteinas1 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12"><p><img src="proteina2.jpeg" width="200px" /><br> Real Whey Protein 1000gr<br>15,19€</p>
       <!-- Codigo de las 5 estrellas -->
-            <form>
-            <p class="clasificacion">
-              <input id="radio1" type="radio" name="estrellas" value="5"><!--
-              --><label for="radio1">★</label><!--
-            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-            --><label for="radio2">★</label><!--
-            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-            --><label for="radio3">★</label><!--
-            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-            --><label for="radio4">★</label><!--
-            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-            --><label for="radio5">★</label>
-                </p></form>
+      <div class="acidjs-rating-stars">
+      <form>
+        <input type="radio" name="group-2" id="group-2-0" value="5" /><label for="group-2-0"></label><!--
+        --><input type="radio" name="group-2" id="group-2-1" value="4" /><label for="group-2-1"></label><!--
+        --><input type="radio" name="group-2" id="group-2-2" value="3" /><label for="group-2-2"></label><!--
+        --><input type="radio" name="group-2" id="group-2-3" value="2" /><label for="group-2-3"></label><!--
+        --><input type="radio" name="group-2" id="group-2-4"  value="1" /><label for="group-2-4"></label>
+      </form>
+      </div>
                 <!--Aqui acaba codigo de las 5 estrellas-->
     </div>
     <div class="FilaProteinas1 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12"><p><img src="proteina3.jpeg" width="200px" /><br> Real Whey Isolate 1000gr<br>23,99€</p>
       <!-- Codigo de las 5 estrellas -->
-            <form>
-            <p class="clasificacion">
-              <input id="radio1" type="radio" name="estrellas" value="5"><!--
-              --><label for="radio1">★</label><!--
-            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-            --><label for="radio2">★</label><!--
-            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-            --><label for="radio3">★</label><!--
-            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-            --><label for="radio4">★</label><!--
-            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-            --><label for="radio5">★</label>
-                </p></form>
+      <div class="acidjs-rating-stars">
+      <form>
+        <input type="radio" name="group-3" id="group-3-0" value="5" /><label for="group-3-0"></label><!--
+        --><input type="radio" name="group-3" id="group-3-1" value="4" /><label for="group-3-1"></label><!--
+        --><input type="radio" name="group-3" id="group-3-2" value="3" /><label for="group-3-2"></label><!--
+        --><input type="radio" name="group-3" id="group-3-3" value="2" /><label for="group-3-3"></label><!--
+        --><input type="radio" name="group-3" id="group-3-4"  value="1" /><label for="group-3-4"></label>
+      </form>
+      </div>
                 <!--Aqui acaba codigo de las 5 estrellas-->
     </div>
     <div class="FilaProteinas1 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12"><p><img src="proteina4.jpeg" width="200px" /><br>  Whey Prime 2.0 1000gr<br>15,99€</p>
       <!-- Codigo de las 5 estrellas -->
-            <form>
-            <p class="clasificacion">
-              <input id="radio1" type="radio" name="estrellas" value="5"><!--
-              --><label for="radio1">★</label><!--
-            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-            --><label for="radio2">★</label><!--
-            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-            --><label for="radio3">★</label><!--
-            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-            --><label for="radio4">★</label><!--
-            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-            --><label for="radio5">★</label>
-                </p></form>
+      <div class="acidjs-rating-stars">
+      <form>
+        <input type="radio" name="group-4" id="group-4-0" value="5" /><label for="group-4-0"></label><!--
+        --><input type="radio" name="group-4" id="group-4-1" value="4" /><label for="group-4-1"></label><!--
+        --><input type="radio" name="group-4" id="group-4-2" value="3" /><label for="group-4-2"></label><!--
+        --><input type="radio" name="group-4" id="group-4-3" value="2" /><label for="group-4-3"></label><!--
+        --><input type="radio" name="group-4" id="group-4-4"  value="1" /><label for="group-4-4"></label>
+      </form>
+      </div>
                 <!--Aqui acaba codigo de las 5 estrellas-->
     </div>
   </div>
   <div class="row">
     <div class="FilaProteinas2 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12"><p><img src="proteina5.jpeg" width="200px" /><br>  Zero Whey Isolate 750gr<br>19,99€</p>
       <!-- Codigo de las 5 estrellas -->
-            <form>
-            <p class="clasificacion">
-              <input id="radio1" type="radio" name="estrellas" value="5"><!--
-              --><label for="radio1">★</label><!--
-            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-            --><label for="radio2">★</label><!--
-            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-            --><label for="radio3">★</label><!--
-            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-            --><label for="radio4">★</label><!--
-            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-            --><label for="radio5">★</label>
-                </p></form>
+      <div class="acidjs-rating-stars">
+      <form>
+        <input type="radio" name="group-5" id="group-5-0" value="5" /><label for="group-5-0"></label><!--
+        --><input type="radio" name="group-5" id="group-5-1" value="4" /><label for="group-5-1"></label><!--
+        --><input type="radio" name="group-5" id="group-5-2" value="3" /><label for="group-5-2"></label><!--
+        --><input type="radio" name="group-5" id="group-5-3" value="2" /><label for="group-5-3"></label><!--
+        --><input type="radio" name="group-5" id="group-5-4"  value="1" /><label for="group-5-4"></label>
+      </form>
+      </div>
                 <!--Aqui acaba codigo de las 5 estrellas-->
     </div>
     <div class="FilaProteinas2 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12"><p><img src="proteina6.jpeg" width="200px" /><br>  Predators Prey New Breed 1800gr<br>39,99€</p>
       <!-- Codigo de las 5 estrellas -->
-            <form>
-            <p class="clasificacion">
-              <input id="radio1" type="radio" name="estrellas" value="5"><!--
-              --><label for="radio1">★</label><!--
-            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-            --><label for="radio2">★</label><!--
-            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-            --><label for="radio3">★</label><!--
-            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-            --><label for="radio4">★</label><!--
-            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-            --><label for="radio5">★</label>
-                </p></form>
+      <div class="acidjs-rating-stars">
+      <form>
+        <input type="radio" name="group-6" id="group-6-0" value="5" /><label for="group-6-0"></label><!--
+        --><input type="radio" name="group-6" id="group-6-1" value="4" /><label for="group-6-1"></label><!--
+        --><input type="radio" name="group-6" id="group-6-2" value="3" /><label for="group-6-2"></label><!--
+        --><input type="radio" name="group-6" id="group-6-3" value="2" /><label for="group-6-3"></label><!--
+        --><input type="radio" name="group-6" id="group-6-4"  value="1" /><label for="group-6-4"></label>
+      </form>
+      </div>
                 <!--Aqui acaba codigo de las 5 estrellas-->
     </div>
     <div class="FilaProteinas2 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12"><p><img src="proteina7.jpeg" width="200px" /><br>  Whey Protein Fusion 900gr<br>23,99€</p>
       <!-- Codigo de las 5 estrellas -->
-            <form>
-            <p class="clasificacion">
-              <input id="radio1" type="radio" name="estrellas" value="5"><!--
-              --><label for="radio1">★</label><!--
-            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-            --><label for="radio2">★</label><!--
-            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-            --><label for="radio3">★</label><!--
-            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-            --><label for="radio4">★</label><!--
-            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-            --><label for="radio5">★</label>
-                </p></form>
+      <div class="acidjs-rating-stars">
+      <form>
+        <input type="radio" name="group-7" id="group-7-0" value="5" /><label for="group-7-0"></label><!--
+        --><input type="radio" name="group-7" id="group-7-1" value="4" /><label for="group-7-1"></label><!--
+        --><input type="radio" name="group-7" id="group-7-2" value="3" /><label for="group-7-2"></label><!--
+        --><input type="radio" name="group-7" id="group-7-3" value="2" /><label for="group-7-3"></label><!--
+        --><input type="radio" name="group-7" id="group-7-4"  value="1" /><label for="group-7-4"></label>
+      </form>
+      </div>
                 <!--Aqui acaba codigo de las 5 estrellas-->
     </div>
     <div class="FilaProteinas2 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12"><p><img src="proteina8.jpeg" width="200px" /><br>  Real Whey Protein 25gr<br>0,99€</p>
       <!-- Codigo de las 5 estrellas -->
-            <form>
-            <p class="clasificacion">
-              <input id="radio1" type="radio" name="estrellas" value="5"><!--
-              --><label for="radio1">★</label><!--
-            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-            --><label for="radio2">★</label><!--
-            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-            --><label for="radio3">★</label><!--
-            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-            --><label for="radio4">★</label><!--
-            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-            --><label for="radio5">★</label>
-                </p></form>
+      <div class="acidjs-rating-stars">
+      <form>
+        <input type="radio" name="group-8" id="group-8-0" value="5" /><label for="group-8-0"></label><!--
+        --><input type="radio" name="group-8" id="group-8-1" value="4" /><label for="group-8-1"></label><!--
+        --><input type="radio" name="group-8" id="group-8-2" value="3" /><label for="group-8-2"></label><!--
+        --><input type="radio" name="group-8" id="group-8-3" value="2" /><label for="group-8-3"></label><!--
+        --><input type="radio" name="group-8" id="group-8-4"  value="1" /><label for="group-8-4"></label>
+      </form>
+      </div>
                 <!--Aqui acaba codigo de las 5 estrellas-->
     </div>
   </div>
@@ -514,20 +491,31 @@
      </div>
          <div class="contactar text-white col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
            <h2> Contacta con nosotros:</h2><br><br>
-           <img src="correo.png" width="50px" />Escribe a: <a href="mailto:NutricionFitness@gmail.com"> NutricionFitness@gmail.com <a><br>
-           <img src="telefono.png" width="50px"/>Llama al:<a href="tel:642168553"> 642168553  <a>
+           <i class="fas fa-envelope-square fa-2x"></i> Escribe a: <a href="mailto:NutricionFitness@gmail.com"> NutricionFitness@gmail.com </a><br>
+           <i class="fas fa-phone-square fa-2x"></i> Llama al:<a href="tel:642168553"> 642168553  </a>
 
          </div>
          <div class="contactar text-white col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+           <!--Aqui metemos los metodos de pago y los sitios donde nos pueden seguir-->
            <h2> Metodos de pago:</h2>
-           <img src="paypal.svg" width="60px"/><a href="paypal.com"><a>
-           <img src="visa.png" width="60px"/><a href="visa.com"><a>
-           <img src="mastercard.png" width="60px"/><a href="mastercard.com"><a>
-
+           <i class="fab fa-cc-paypal fa-2x"></i><a href="paypal.com"></a>
+           <i class="fab fa-cc-visa fa-2x"></i><a href="visa.com"></a>
+           <i class="fab fa-cc-mastercard fa-2x"></i><a href="mastercard.com"></a>
+             <br><br><br><br>
+              <h2>Siguenos:</h2>
+              <ul>
+            <li><a href="http://facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+            <li><a href="http://linkedin.com/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+            <li><a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+            <li><a href="http://plus.google.com/" target="_blank"><i class="fa fa-google-plus fa-2x"></i> </a></li>
+        </ul>
+            <!--Aqui finaliza el codigo-->
          </div>
          <!--Aqui acaba lo que he añadido al pie-->
        </div>
+       <div class="contactar text-white col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+      </div>
       </div>
       <!-- /.container -->
     </footer>

@@ -32,8 +32,15 @@ $(document).ready(function(){
 // Buscador
   $(".lupa").click(function(){
     $(".form-control").focus();
+  });
 });
 
+<<<<<<< HEAD:Pagina-Modificada/js/javascript.js
 
 
 });
+=======
+function login(){
+  var v = window.open("login.html","","height=550 width=400");
+}
+>>>>>>> aa47035e7522e2f67e24ba6d0f819c90185d9c07:Pagina/js/javascript.js
