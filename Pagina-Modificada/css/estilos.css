@@ -68,14 +68,6 @@ border: 0px none #000000;
 
 /* Menu */
 
-.navbar-nav > li > a:hover{
-  border-bottom: 3px solid #C00;
-}
-
-table tr td{
-  width: 250px;
-}
-
 li {
 	margin: 0px;
 	padding: 0px;
@@ -86,7 +78,15 @@ ul {
 	padding: 0px;
 }
 
-.masamuscular, .quemadoresdegrasa, .energia, .productosalimenticios{
+.navbar-nav > li > a:hover{
+  border-bottom: 3px solid #C00;
+}
+
+table tr td{
+  width: 250px;
+}
+
+.masamuscular, .quemadoresdegrasa, .energia, .productosalimenticios, .marcas{
   display: none;
   height: 280px;
   padding-left: 230px;
@@ -100,23 +100,23 @@ hr{
   margin-right: 10px;
 }
 
-.masamuscular table ul, .quemadoresdegrasa table ul, .energia table ul, .productosalimenticios table ul{
+.masamuscular table ul, .quemadoresdegrasa table ul, .energia table ul, .productosalimenticios table ul, .marcas table ul{
   text-decoration: none;
   list-style: none;
 }
 
-.masamuscular th > a, .quemadoresdegrasa th > a, .energia th > a, .productosalimenticios th > a{
+.masamuscular th > a, .quemadoresdegrasa th > a, .energia th > a, .productosalimenticios th > a, .marcas th > a{
   color: black;
   font-weight: bold;
 }
 
-.masamuscular table td a, .quemadoresdegrasa table td a, .energia table td a, .productosalimenticios table td a{
+.masamuscular table td a, .quemadoresdegrasa table td a, .energia table td a, .productosalimenticios table td a, .marcas table td a{
   color: gray;
   margin-left: 10px;
   text-align: left;
 }
 
-.masamuscular a:hover, .quemadoresdegrasa a:hover, .energia a:hover, .productosalimenticios a:hover{
+.masamuscular a:hover, .quemadoresdegrasa a:hover, .energia a:hover, .productosalimenticios a:hover, .marcas a:hover{
   text-decoration: none;
   color: red;
 }
