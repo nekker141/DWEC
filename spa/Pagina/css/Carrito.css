@@ -1,0 +1,255 @@
+/* Cabecera */
+
+header{
+  background-color: red;
+  height: 90px;
+}
+
+header img{
+  width: 150px;
+  float: left;
+  margin-left: -50px;
+}
+
+
+/*imagen contenido*/
+body{
+  background-color: white;
+}
+
+
+
+/* Menu */
+
+li {
+	margin: 0px;
+	padding: 0px;
+
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.navbar-nav > li > a:hover{
+  border-bottom: 3px solid #C00;
+}
+
+table tr td{
+  width: 250px;
+}
+
+.masamuscular, .quemadoresdegrasa, .energia, .productosalimenticios, .marcas{
+  display: none;
+  height: 280px;
+  padding-left: 230px;
+  background-color: #E9E9E9;
+}
+
+hr{
+  margin: 0;
+  padding: 0;
+  border-color: silver;
+  margin-right: 10px;
+}
+
+.masamuscular table ul, .quemadoresdegrasa table ul, .energia table ul, .productosalimenticios table ul, .marcas table ul{
+  text-decoration: none;
+  list-style: none;
+}
+
+.masamuscular th > a, .quemadoresdegrasa th > a, .energia th > a, .productosalimenticios th > a, .marcas th > a{
+  color: black;
+  font-weight: bold;
+}
+
+.masamuscular table td a, .quemadoresdegrasa table td a, .energia table td a, .productosalimenticios table td a, .marcas table td a{
+  color: gray;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.masamuscular a:hover, .quemadoresdegrasa a:hover, .energia a:hover, .productosalimenticios a:hover, .marcas a:hover{
+  text-decoration: none;
+  color: red;
+}
+
+.fase{
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+.lupa{
+  background-color: white;
+  border-radius: 10px 0px 0px 10px;
+
+}
+
+.buscador{
+  max-width: 400px;
+  margin-left: 270px;
+  padding-top: 25px;
+  position: absolute;
+}
+
+.buscador input{
+  border-radius: 0px 10px 10px 0px;
+-moz-border-radius: 0px 10px 10px 0px;
+-webkit-border-radius: 0px 10px 10px 0px;
+border: 0px none #000000;
+
+}
+
+.buscador input:focus {
+    box-shadow:none;
+}
+
+.login-register{
+  float: right;
+  padding-top: 10px;
+}
+
+.login-register a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.login-register a:hover{
+  color:orange;
+}
+
+.register{
+  padding-left: 15px;
+}
+
+.carrito{
+  padding-left: 15px;
+
+}
+
+
+
+/* Cajas con los productos*/
+.ContenidoCarrito{
+  height: 700px;
+  border:1px solid black;
+background: lightgray;
+}
+
+
+/* Realizar estilo y color Botones y que aparezca carrito*/
+
+button{
+ padding: 10px 35px;
+ overflow:hidden;
+
+}
+button {
+ border: none;
+ background: #3a7999;
+ color: #f2f2f2;
+ padding: 10px;
+ font-size: 18px;
+ border-radius: 5px;
+ position: relative;
+ box-sizing: border-box;
+ transition: all 500ms ease;
+ float:center;
+}
+button{
+ padding: 10px 35px;
+ overflow:hidden;
+
+}
+button:before {
+ font-family: FontAwesome;
+ content:"\f07a";
+ position: absolute;
+ top: 11px;
+ left: -30px;
+ transition: all 200ms ease;
+}
+button:hover:before {
+ left: 7px;
+}
+
+
+
+
+/* Las 5 estrellitas productos*/
+acidjs-rating-stars,
+.acidjs-rating-stars label::before
+{
+    display: inline-block;
+}
+
+.acidjs-rating-stars label:hover,
+.acidjs-rating-stars label:hover ~ label
+{
+    color: #189800;
+}
+
+.acidjs-rating-stars *
+{
+    margin: 0;
+    padding: 0;
+}
+
+.acidjs-rating-stars input
+{
+    display: none;
+}
+
+.acidjs-rating-stars
+{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.acidjs-rating-stars label
+{
+    color: #ccc;
+}
+
+.acidjs-rating-stars label::before
+{
+    content: "\2605";
+    width: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.acidjs-rating-stars input:checked ~ label
+{
+    color: #f5b301;
+}
+
+.acidjs-rating-disabled
+{
+    opacity: .50;
+
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    pointer-events: none;
+}
+
+/* aqui acaban codigo 5 estrellas*/
+
+
+/* que cambie de de colo facebook, al pasar con el raton por encima etc*/
+/* Aquí empieza el estilo de Font-icons del pie */
+  /* Cuando el ratón se sitúe sobre los iconos de redes sociales del pie, debe
+  producirse una transición que dure 3s que reduzca el radio del borde de los
+  iconos al 5% y que modifique el color de la letra y del fondo*/
+      footer  a :hover{
+        border-radius: 50%;
+        -webkit-transition: background-color 5s;
+        -moz-transition: background-color 5s;
+        -o-transition: background-color 5s;
+        -ms-transition: background-color 5s;
+        transition: background-color 5s;
+
+      }
+      /* Hasta aquí el estilo de Font-icons del pie */

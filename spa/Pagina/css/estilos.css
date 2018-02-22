@@ -1,0 +1,447 @@
+
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+
+/* Cabecera */
+.navbar{
+  height: auto;
+  width: 100%
+}
+
+.navbar.navbar-expand-lg.navbar-light{
+  background-color: red;
+}
+
+.cabecera{
+  height: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#titulo{
+  display: none;
+  text-align: center;
+  font-size: 130%;
+  font-family: Arial;
+  color: white;
+}
+
+form button{
+  background-color: white;
+}
+
+.sesion a{
+  text-decoration: none;
+  color: white;
+  font-size: 100%;
+}
+
+.sesion{
+  color: white;
+  float: right;
+}
+
+.logotipo{
+  float: left;
+}
+.logotipo img{
+  width: 100%;
+}
+
+#logo_collapse{
+  width: 35%;
+  display: none;
+  margin: auto;
+}
+
+
+.form-control{
+  width: 80% !important;
+}
+
+.form-inline{
+  width: 100%;
+  text-align: center;
+}
+
+.formulario form{
+  text-align: center;
+  margin: auto;
+  padding: inherit;
+}
+
+.login{
+  text-align: center;
+  width: 100%;
+
+}
+
+button.navbar-toggler{
+  background-color: white;
+
+}
+
+/* Menu */
+.menu_secundario {
+  background-color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.menu_secundario ul{
+  list-style-type: none;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.menu_secundario li{
+  display:inline-table;
+  text-align: center;
+  margin: 0 40px 0 0;
+}
+
+.menu_secundario li a {
+  color: #353942;
+  text-decoration: none;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+.menu_secundario ul li ul{
+  display: none;
+}
+
+.menu_secundario ul li ul li{
+  display:block;
+  position: absolute;
+}
+
+/* Carrusel */
+
+
+.carrousel{
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+.carousel-item {
+  height: 73vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+  margin-bottom: 5%;
+}
+
+/* Cajas con los productos*/
+#ofertas_dia{
+  color: #353942;
+  font-size: 3vw;
+}
+
+.FilaProteinas1{
+  height: 30%;
+  background-color: white;
+  text-align: center;
+  color: #353942;
+  font-weight:bold;
+  margin-bottom: 2px;
+}
+.FilaProteinas2{
+  height: 30%;
+  background-color: white;
+  text-align: center;
+  color: #353942;
+  font-weight:bold;
+}
+
+.FilaProteinas1 p{
+  font-size: 80%;
+}
+
+.FilaProteinas2 p{
+  font-size: 80%;
+}
+
+#img_tabla{
+  width: 40%;
+  padding-top: 10px;
+  margin: auto;
+}
+
+/* Color de los links y del carrito*/
+a:hover {color:orange;
+  text-decoration:none;}
+
+
+  /* Las 5 estrellitas productos*/
+  acidjs-rating-stars,
+  .acidjs-rating-stars label::before
+  {
+    display: inline-block;
+  }
+
+  .acidjs-rating-stars label:hover,
+  .acidjs-rating-stars label:hover ~ label
+  {
+    color: #189800;
+  }
+
+  .acidjs-rating-stars *
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  .acidjs-rating-stars input
+  {
+    display: none;
+  }
+
+  .acidjs-rating-stars
+  {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+
+  .acidjs-rating-stars label
+  {
+    color: #ccc;
+  }
+
+  .acidjs-rating-stars label::before
+  {
+    content: "\2605";
+    width: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .acidjs-rating-stars input:checked ~ label
+  {
+    color: #f5b301;
+  }
+
+  .acidjs-rating-disabled
+  {
+    opacity: .50;
+
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    pointer-events: none;
+  }
+
+  /* aqui acaban codigo 5 estrellas*/
+
+
+  /* que cambie de de colo facebook, al pasar con el raton por encima etc*/
+  /* Aquí empieza el estilo de Font-icons del pie */
+  /* Cuando el ratón se sitúe sobre los iconos de redes sociales del pie, debe
+  producirse una transición que dure 3s que reduzca el radio del borde de los
+  iconos al 5% y que modifique el color de la letra y del fondo*/
+
+  /* Footer */
+
+  footer{
+    margin: auto;
+    margin-top: 40px !important;
+  }
+
+  footer h2{
+    font-size: 23px;
+  }
+
+  footer a{
+    font-size: 18px;
+  }
+
+  .row.footer{
+    margin-top: -30px;
+  }
+
+  .fotoCamara.text-white{
+    padding-left: 5%;
+  }
+
+  .contactar.text-white{
+    padding-left: 5%;
+  }
+
+  .fas{
+    margin-left: 5px;
+  }
+
+  footer  a :hover{
+    border-radius: 50%;
+    -webkit-transition: background-color 5s;
+    -moz-transition: background-color 5s;
+    -o-transition: background-color 5s;
+    -ms-transition: background-color 5s;
+    transition: background-color 5s;
+
+  }
+  /* Hasta aquí el estilo de Font-icons del pie */
+
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width : 768px) {
+    .menu_secundario{
+      display:none;
+    }
+    #logo_collapse{
+      display: inline;
+    }
+  }
+
+  /* Login Modal */
+  #popup {
+     display: none;
+     opacity: 0;
+     margin-top: -300px;
+
+  }
+
+  #popup:target {
+     display: block;
+     opacity: 1;
+     background-color: rgba(0,0,0,0.8);
+     position: fixed;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+     margin:0;
+     z-index: 999;
+  }
+
+
+  .popup-contenedor {
+     position: relative;
+     margin:7% auto;
+     padding:30px 50px;
+     background-color: #fafafa;
+     color:#333;
+     border-radius: 3px;
+     width:30%;
+     text-align: center;
+  }
+
+
+  a.popup-cerrar {
+     position: absolute;
+     top:3px;
+     right:3px;
+     background-color: #333;
+     padding:7px 10px;
+     font-size: 20px;
+     text-decoration: none;
+     line-height: 1;
+     color:#fff;
+
+  }
+  /* Login Modal  Registro*/
+  #popup2 {
+     display: none;
+     opacity: 0;
+     margin-top: -300px;
+
+  }
+
+  #popup2:target {
+     display: block;
+     opacity: 1;
+     background-color: rgba(0,0,0,0.8);
+     position: fixed;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+     margin:0;
+     z-index: 999;
+  }
+
+
+  .popup2-contenedor2 {
+     position: relative;
+     margin:0% auto;
+     padding:15px 50px;
+     background-color: #fafafa;
+     color:#333;
+     border-radius: 3px;
+     width:30%;
+     height:980px;
+  }
+
+
+  a.popup2-cerrar2 {
+     position: absolute;
+     top:3px;
+     right:3px;
+     background-color: #333;
+     padding:7px 10px;
+     font-size: 20px;
+     text-decoration: none;
+     line-height: 1;
+     color:#fff;
+
+  }
+
+  #registro input{
+    border: 1px solid lightgray;
+  }
+
+  /* Login Modal  MAPA*/
+  #popup3 {
+     display: none;
+     opacity: 0;
+     margin-top: 200px;
+
+  }
+
+  #popup3:target {
+     display: block;
+     opacity: 1;
+     background-color: rgba(0,0,0,0.8);
+     position: fixed;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+     margin:0;
+     z-index: 999;
+  }
+
+
+  .popup3-contenedor3 {
+     position: relative;
+     margin:20% auto;
+     padding:15px 50px;
+     background-color:lightgrey;
+     color:#333;
+     border-radius: 3px;
+     width:60%;
+
+
+  }
+
+
+  a.popup3-cerrar3 {
+     position: absolute;
+     top:3px;
+     right:3px;
+     background-color: #333;
+     padding:7px 10px;
+     font-size: 20px;
+     text-decoration: none;
+     line-height: 1;
+     color:#fff;
+
+  }
