@@ -432,7 +432,6 @@ a:hover {color:orange;
 
   }
 
-
   a.popup3-cerrar3 {
      position: absolute;
      top:3px;
@@ -445,3 +444,182 @@ a:hover {color:orange;
      color:#fff;
 
   }
+
+  /* Carrito */
+  /* Cajas con los productos*/
+  #carri{
+    display:none;
+  }
+
+  .ContenidoCarrito{
+    height: 700px;
+    border:1px solid black;
+  background: lightgray;
+  }
+
+
+  /* Realizar estilo y color Botones y que aparezca carrito*/
+
+  .carri button{
+   padding: 10px 35px;
+   overflow:hidden;
+
+  }
+  .carri button {
+   border: none;
+   background: #3a7999;
+   color: #f2f2f2;
+   padding: 10px;
+   font-size: 18px;
+   border-radius: 5px;
+   position: relative;
+   box-sizing: border-box;
+   transition: all 500ms ease;
+   float:center;
+  }
+  .carri button{
+   padding: 10px 35px;
+   overflow:hidden;
+
+  }
+  .carri button:before {
+   font-family: FontAwesome;
+   content:"\f07a";
+   position: absolute;
+   top: 11px;
+   left: -30px;
+   transition: all 200ms ease;
+  }
+  .carri button:hover:before {
+   left: 7px;
+  }
+
+  /* Tienda */
+
+  #tienda{
+    display: none;
+  }
+
+  /*Menu Y cajas Productos*/
+   .filasPropductos{
+    height: 300px;
+    border:1px solid black;
+    background: white;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .Menulateral{
+    background-color: red;
+    border: 1px solid black;
+    width:25%;
+    text-align: left;
+  }
+
+  /*Cambiar cosas menu lateral*/
+  .Menulateral a{
+  color:white;
+  }
+
+  /* Color de los links y del carrito*/
+  a:hover {color:orange;
+  text-decoration:none;}
+
+/* Quienes somos */
+#quienes{
+  display: none;
+}
+
+#quienes body{
+  background-color: white;
+
+}
+
+#quienes p{
+  text-align: left;
+  font-family: 'Berkshire Swash', cursive;
+}
+#quienes img{
+  float:left;
+
+}
+
+/* Producto */
+.cuerpo{
+  display:none;
+}
+
+#producto{
+  display: none;
+}
+/*Menu Y cajas Productos*/
+#producto .filasPropductos{
+  height: 200px;
+  border:1px solid black;
+  background: white;
+  margin-bottom: 5px;
+  text-align: center;
+}
+#producto .filasPropductos1{
+  height: 90px;
+  border:1px solid black;
+  background: white;
+  margin-bottom: 5px;
+  text-align: center;
+}
+#producto .filasPropductos2{
+  height: 220px;
+  border:1px solid black;
+  background: white;
+  margin-bottom: 5px;
+  text-align:center;
+}
+
+#producto .Menulateral{
+  background-color: white;
+  border: 1px solid black;
+  width:10%;
+  text-align:center;
+}
+/*Color boton--*/
+#dropdownMenuButton{
+  background-color:lightgray;
+  width:200px;
+  height: 40px;
+
+}
+/* Realizar estilo y color Botones y que aparezca carrito*/
+
+#producto button{
+ padding: 10px 35px;
+ overflow:hidden;
+
+}
+#producto button {
+ border: none;
+ background: red;
+ color: #f2f2f2;
+ padding: 10px;
+ font-size: 18px;
+ border-radius: 5px;
+ position: relative;
+ box-sizing: border-box;
+ transition: all 500ms ease;
+ float:center;
+}
+#producto button{
+ padding: 10px 35px;
+ overflow:hidden;
+
+}
+#producto button:before {
+ font-family: FontAwesome;
+ content:"\f07a";
+ position: absolute;
+ top: 11px;
+ left: -30px;
+ transition: all 200ms ease;
+}
+#producto button:hover:before {
+ left: 7px;
+}

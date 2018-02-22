@@ -1,17 +1,30 @@
 $(document).ready(function(){
 
-  $('#carricoche').css('display','none');
-
-  var carrito = $('#carricoche');
-
-  $("#carrico").click(function(){
-    $('.tupac').html(carrito)
-    $('#carricoche').css('display','block');
-
+  var carrito = $('#carri');
+  $("#iconocarrito").click(function(){
+    $('.cuerpo').html(carrito);
+    $('#carri').css('display','block');
   });
 
+  var tienda = $('#tienda');
+  $(".menu_secundario ul li a").click(function(){
+    $('.cuerpo').html(tienda);
+    $('#tienda').css('display','block');
+  });
 
-  $("header img").click(function(){
+  var quienessomos = $('#quienes');
+  $("#quienessomos").click(function(){
+      $('.cuerpo').html(quienessomos);
+      $('#quienes').css('display','block');
+  });
+
+  // var producto = $('#quienes');
+  // $("#quienessomos").click(function(){
+  //     $('.cuerpo').html(quienessomos);
+  //     $('#quienes').css('display','block');
+  // });
+
+  $(".logo_collapse").click(function(){
     window.location.href = "index.html";
   });
 
@@ -83,40 +96,6 @@ ret = false;
       }
 
       return ret;
-});
-
-
-
-categorias(1);
-
-
-
-
-// arry = $('.elemento');
-// // $(arry[2]).css("background-color","blue");
-// $(arry[0]).click(function(){
-//   categorias(1);
-// });
-// $(arry[1]).click(function(){
-//   categorias(2);
-// });
-// $(arry[2]).click(function(){
-//   categorias(3);
-// });
-// $(arry[3]).click(function(){
-//   categorias(4);
-// });
-// $(arry[4]).click(function(){
-//   categorias(5);
-// });
-
-
-
-
-// for (var i = 0; i < arry.length; i++) {
-//   $(arry[i]).click(function(){
-//     alert("hola "+i)
-//   });
-// }
-
+      
+    });
 });
